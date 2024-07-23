@@ -15,7 +15,7 @@ body {
 
 }
 
-nav{
+/* nav{
     display: flex;
     padding: 2% 0%;
     justify-content: space-between;
@@ -57,7 +57,103 @@ nav img{
 
 .nav-links ul li:hover::after{
     width: 100%;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
 }
+
+nav a img {
+    width: 125px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    padding: 0 15px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: rgb(68, 153, 102);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #343434;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-menu a, .profile-menu form button {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+}
+
+.profile-menu a:hover, .profile-menu form button:hover {
+    background-color: #06892f;
+    cursor: pointer;
+}
+
+.profile-dropdown:hover .profile-menu {
+    display: block;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -99,13 +195,13 @@ nav img{
 }
 
 .forum-header h1 {
-    margin: 0;
+    margin-right: 30px;
     font-size: 24px;
 }
 
 .forum-header input[type="text"] {
     padding: 10px;
-    width: 60%;
+    width: 55%;
     border: 1px solid #33a466;
     border-radius: 4px;
     margin-left: -5%;
@@ -208,12 +304,13 @@ nav img{
 }
 
 .ask-question textarea, .reply-question textarea {
-    width: 100%;
+    width: 98%;
     height: 100px;
     padding: 10px;
     border: 1px solid #52a048;
     border-radius: 4px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .ask-question button, .reply-question button {
@@ -392,6 +489,64 @@ color: #fff;
     padding: 7px;
 }
 
+.reply-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.reply-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.reply-section textarea {
+    width: 97%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.reply-section button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.reply-section button:hover {
+    background-color: #218838;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 
 
