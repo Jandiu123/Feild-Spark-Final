@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Instructor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
 class InstructorAuthController extends Controller
 {
+
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -34,7 +36,7 @@ class InstructorAuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect()->route('login')->with('status', 'Registration successful! You can now log in.');
+        return redirect()->route('instructor.login')->with('status', 'Registration successful! You can now log in.');
         response()->json(['status' => true, 'message' => 'Instructor registered successfully', 'instructor' => $instructor], 201);
     }
 
@@ -45,23 +47,26 @@ class InstructorAuthController extends Controller
             'password' => 'required',
         ]);
 
-        $instructor = Instructor::where('email', $request->email)->first();
+        $credentials = $request->only('email', 'password');
 
-        if (! $instructor || ! Hash::check($request->password, $instructor->password)) {
-            throw ValidationException::withMessages([
-                'email' => ['The provided credentials are incorrect.'],
-            ]);
+        if (Auth::guard('instructor')->attempt($credentials)) {
+            // $request->session()->regenerate();
+            return redirect()->intended('/idashboard');
         }
 
-        $token = $instructor->createToken('instructor-token')->plainTextToken;
-
-        return response()->json(['status' => true, 'token' => $token], 200);
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
     }
 
     public function logout(Request $request)
     {
-        $request->user()->currentAccessToken()->delete();
+        Auth::guard('instructor')->logout();
 
-        return response()->json(['status' => true, 'message' => 'Logged out successfully'], 200);
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('/')->with('status', 'You have been logged out.');
     }
+    
 }

@@ -16,10 +16,7 @@ class TemplateController extends Controller
     }
     public function index2()
     {
-        return view('auth.instructorlogin');
+        return view('pages.dashboard');
     }
-    public function index3()
-    {
-        return view('auth.instructorregister');
-    }
+   
 }

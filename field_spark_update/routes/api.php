@@ -4,10 +4,26 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\InstructorAuthController;
+use App\Http\Controllers\QuestionController;
+
+Route::get('/questions', [QuestionController::class, 'index']);
+Route::post('/questions', [QuestionController::class, 'store']);
+Route::get('/questions/{id}', [QuestionController::class, 'show']);
+Route::post('/questions/{id}/replies', [QuestionController::class, 'storeReply']);
+Route::get('/questions/search/{query}', [QuestionController::class, 'search']);
+// Route::post('/questions/{id}/solve', [QuestionController::class, 'markAsSolved']);
+Route::post('/questions/{id}/solve', 'QuestionController@markAsSolved');
+Route::get('/questions/solved', 'QuestionController@getSolvedQuestions');
+Route::post('/questions/{id}/like', [QuestionController::class, 'likeQuestion']);
+
+
+
+
+
 
 Route::post('/instructor/register', [InstructorAuthController::class, 'register']);
 Route::post('/instructor/login', [InstructorAuthController::class, 'login'])->middleware('guest:sanctum');
-Route::post('/instructor/logout', [InstructorAuthController::class, 'logout'])->middleware('auth:sanctum');
+Route::post('/instructor/logout', [InstructorAuthController::class, 'logout'])->middleware('guest:sanctum');
 
 
 /*
