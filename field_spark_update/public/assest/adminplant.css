@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(field.jpg);;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #30623f;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+}
+
+nav a img {
+    width: 125px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    padding: 0 15px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: rgb(68, 153, 102);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #343434;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-menu a, .profile-menu form button {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+}
+
+.profile-menu a:hover, .profile-menu form button:hover {
+    background-color: #06892f;
+    cursor: pointer;
+}
+
+.profile-dropdown:hover .profile-menu {
+    display: block;
+}
+
+.drag-over {
+    border: 2px dashed #000;
+    background-color: #f0f0f0;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5.5px solid #296e2b;
+    margin: 120px auto;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: -15px;
+    color: #306a32;
+    font-size: 220%;
+    margin-bottom: 50px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 39px;
+}
+
+.form-row {
+    display: contents;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 1;
+    position: relative;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    padding: 20px;
+    border: 1.5px solid #296e2b;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjusting for padding and border */
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group input[type="file"] {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    grid-column: span 3;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #377939;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}

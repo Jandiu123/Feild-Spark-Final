@@ -5,10 +5,10 @@
     <a href="index.html"><img src="assest/logo34.png" alt="logo"></a>
     <div class="nav-links">
         <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="{{ route('dashboard') }}">Home</a></li>
             <li><a href="Turtle categories.html">Appointments</a></li>
             <li><a href="{{ route('pages.discussion') }}">Discussion forum</a></li>
-            <li><a href="otherhatchery.html">Plant information</a></li>
+            <li><a href="{{ route('pages.plantinfo') }}">Plant information</a></li>
             <li><a href="threats.html">Resources</a></li>
         </ul>
     </div>
