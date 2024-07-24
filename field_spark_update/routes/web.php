@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\InstructorAuthController;
+use App\Http\Controllers\PlantController;
 
 
 
@@ -24,6 +25,16 @@ Route::get('/idiscussion', function () {
     return view('pages.idiscussion');
 })->name('pages.idiscussion');
 
+Route::get('/plantinfo', function () {
+    return view('pages.plantinfo');
+})->name('pages.plantinfo');
+
+Route::get('/instructorplant', function () {
+    return view('pages.instructorplant');
+})->name('pages.instructorplant');
+
+Route::get('/plant/{id}', [PlantController::class, 'show'])->name('plant.show');
+
 Route::get('/api/user', function() {
     return response()->json(Auth::guard('instructor')->user()->name);
 });
@@ -38,6 +49,9 @@ route::get('/register',[TemplateController::class,'index1']);
 // route::get('/',[TemplateController::class,'index2']);
 // route::get('/instructorregister',[TemplateController::class,'index3']);
 
+Route::post('/plants', [PlantController::class, 'store'])->name('plants.store');
+
+Route::get('/plantinfo', [PlantController::class, 'index'])->name('pages.plantinfo');
 
 
 

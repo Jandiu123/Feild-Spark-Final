@@ -2,13 +2,13 @@
 
 @section('nav')
 <nav>
-    <a href="index.html"><img src="assest/logo34.png" alt="logo"></a>
+    <a href="{{ route('pages.instructordashboard') }}"><img src="assest/logo34.png" alt="logo"></a>
     <div class="nav-links">
         <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="{{ route('pages.instructordashboard') }}">Home</a></li>
             <li><a href="Turtle categories.html">Appointments</a></li>
             <li><a href="{{ route('pages.idiscussion') }}">Discussion forum</a></li>
-            <li><a href="otherhatchery.html">Plant information</a></li>
+            <li><a href="{{ route('pages.instructorplant') }}">Plant information</a></li>
             <li><a href="threats.html">Resources</a></li>
         </ul>
     </div>
