@@ -120,3 +120,4 @@ function backToQuestions() {
     questionDetailContainer.classList.add('hidden');
     loadQuestions();
 }
+

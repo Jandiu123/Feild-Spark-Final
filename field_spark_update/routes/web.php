@@ -39,20 +39,33 @@ Route::get('/api/user', function() {
     return response()->json(Auth::guard('instructor')->user()->name);
 });
 
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('auth.login');
+
 
 Route::post('/instructor/register', [InstructorAuthController::class, 'register']);
 Route::post('/instructor/login', [InstructorAuthController::class, 'login']);
 
 
-route::get('/',[TemplateController::class,'index']);
+route::post('/login',[UserController::class,'loginUser'])->name('login');
 route::get('/register',[TemplateController::class,'index1']);
-// route::get('/',[TemplateController::class,'index2']);
-// route::get('/instructorregister',[TemplateController::class,'index3']);
+route::get('/',[TemplateController::class,'index3']);
+route::get('/aboutus',[TemplateController::class,'index4']);
+route::get('/services',[TemplateController::class,'index5']);
+route::get('/plants',[TemplateController::class,'index6']);
+route::get('/contactus',[TemplateController::class,'index7']);
 
 Route::post('/plants', [PlantController::class, 'store'])->name('plants.store');
-
+Route::get('/instructorplants', [PlantController::class, 'instructorPlantIndex'])->name('instructor.plants.index');
 Route::get('/plantinfo', [PlantController::class, 'index'])->name('pages.plantinfo');
-
+Route::get('/plants', [PlantController::class, 'newPage'])->name('pages.plants');
+Route::get('/plants/create', [PlantController::class, 'create'])->name('plants.create');
+Route::post('/plants', [PlantController::class, 'store'])->name('plants.store');
+Route::get('/plants/{id}', [PlantController::class, 'show'])->name('plants.show');
+Route::get('/plants/{id}/edit', [PlantController::class, 'edit'])->name('plants.edit');
+Route::put('/plants/{id}', [PlantController::class, 'update'])->name('plants.update');
+Route::delete('/plants/{id}', [PlantController::class, 'destroy'])->name('plants.destroy');
 
 
 
