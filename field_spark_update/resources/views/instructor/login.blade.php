@@ -51,7 +51,7 @@
                 <div class="register-link mt-6 text-center text-custom-green">
                     <p>Don't have an account? <a href="/instructor/register" class="underline hover:text-custom-green-hover">Register</a></p>
                     <br>
-                    <p>Are you already registered as an Farmer? <a href="/" class="underline hover:text-custom-green-hover">Log In</a></p>
+                    <p>Are you already registered as an Farmer? <a href="/login" class="underline hover:text-custom-green-hover">Log In</a></p>
                 </div>
             </form>
 

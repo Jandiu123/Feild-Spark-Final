@@ -66,7 +66,7 @@ class InstructorAuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('/')->with('status', 'You have been logged out.');
+        return redirect()->route('login')->with('status', 'You have been logged out.');
     }
     
 }

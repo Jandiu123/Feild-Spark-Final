@@ -43,5 +43,11 @@ class PlantController extends Controller
        $plant = Plant::findOrFail($id);
        return view('pages.plantdetail', compact('plant'));
     }
+    public function newPage()
+    {
+        $plants = Plant::all();
+        return view('pages.plants', compact('plants'));
+    }
+    
 }
 

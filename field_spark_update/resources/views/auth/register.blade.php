@@ -69,7 +69,7 @@
                         {{ __('Register') }}
                     </x-button>
 
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900 mt-4" href="/">
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 mt-4" href="/login">
                         {{ __('Already registered as a Farmer?') }}
                     </a>
 
