@@ -38,7 +38,6 @@ class InstructorAuthController extends Controller
         ]);
 
         return redirect()->route('instructor.login')->with('status', 'Registration successful! You can now log in.');
-        response()->json(['status' => true, 'message' => 'Instructor registered successfully', 'instructor' => $instructor], 201);
     }
 
     public function login(Request $request)
