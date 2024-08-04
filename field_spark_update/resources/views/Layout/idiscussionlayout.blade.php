@@ -9,7 +9,24 @@
 
 <body>
     @include('Libraries.discussionstyle') 
-        @yield('navbar')
+	<div class="banner1">
+		<div class="container3">
+           @yield('navbar')
+        </div>
+</div>
+<!-- breadcrumbs -->
+<div class="breadcrumbs">
+		<div class="container">
+			<div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="{{ route('pages.instructordashboard') }}">Dashboard</a><span>/</span></li>
+					<li><i class="fa fa-picture-o" aria-hidden="true"></i>Instructor Discussion Forum</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
     <div class="forum-container">
        @yield('forum')
     </div>

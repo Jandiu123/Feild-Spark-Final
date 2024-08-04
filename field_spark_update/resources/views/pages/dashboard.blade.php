@@ -17,10 +17,10 @@
 							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
 								<ul class="w3layouts_menu__list">
 									<li class="active"><a href="{{ route('dashboard') }}">Home</a></li>
-									<li><a href="/aboutus">Appointments</a></li> 
+									<li><a href="{{ route('pages.appointment') }}">Appointments</a></li> 
 									<li><a href="{{ route('pages.discussion') }}">Discussion Forum</a></li>
 									<li><a href="{{ route('pages.plantinfo') }}">Plants</a></li> 
-									<li><a href="/contactus">Resources</a></li>
+									<li><a href="{{ route('pages.resource') }}">Resources</a></li>
 									<li class="dropdown">
                                     @auth
                                     <div class="profile-dropdown">
@@ -48,8 +48,9 @@
         <h1>Welcome To The Place Where Natural Beauty Born</h1>
         <p>Field Spark empowers farmers with cutting-edge technology, offering real-time data, expert guidance,<br> and sustainable solutions to boost agricultural productivity.</p>
         <div>
-            <button type="button"><span></span>Make a Appoinment</button>
-            <button type="button"><span></span>Search plants</button>
+            <a href="{{ route('pages.appointment') }}" class="link"><button type="button"><span></span>Make a Appoinment</button></a>
+            <a href="{{ route('pages.plantinfo') }}" class="link"><button type="button"><span></span>Search plants</button></a>
+		    <a href="{{ route('pages.instructors') }}" class="link"><button type="button"><span></span>Search Instructors</button></a>	
         </div> 
 
     </div>

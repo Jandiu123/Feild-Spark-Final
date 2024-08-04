@@ -14,7 +14,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style-new.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style-instructor.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="assest/plantinfo.css">
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -113,6 +113,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
 		</div>
 	</div>
+
 <!-- banner -->
 <!---728x90--->
 
@@ -147,59 +148,35 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3layouts_breadcrumbs_left">
 				<ul>
 					<li><i class="fa fa-home" aria-hidden="true"></i><a href="{{ route('dashboard') }}">Dashboard</a><span>/</span></li>
-					<li><i class="fa fa-picture-o" aria-hidden="true"></i>Plants</li>
+					<li><i class="fa fa-picture-o" aria-hidden="true"></i>Instructors</li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-	<div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search by name or origin">
-    <button id="searchButton">Search</button>
-</div>
 
+      <!-- Search Form -->
+<div class="search-container">
+    <input type="text" id="search-box" placeholder="Search Instructors" />
+    <button id="search-btn">Search</button>
+</div>
 <!-- //breadcrumbs -->
 <!---728x90--->
 
 <!-- gallery -->
-	<div class="welcome">
-		<div class="container">
-			<h3 class="agileits_w3layouts_head">Our <span>Plants Collection</span></h3>
-			<div class="w3_agile_image">
-				<img src="images/1.png" alt=" " class="img-responsive" />
-			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
-			
-            <!---728x90--->
+<div class="welcome">
+        <div class="container">
+            <h3 class="agileits_w3layouts_head">Our <span>Instructors</span></h3>
+            <div class="w3_agile_image">
+                <img src="images/1.png" alt=" " class="img-responsive" />
+            </div>
+            <p class="agile_para">Meet our experienced instructors who are ready to guide you.</p>
 
-			<div class="w3layouts_gallery_grids">	
-                @foreach($plants as $index => $plant)
-				<div class="col-md-4 w3layouts_gallery_grid" data-index="{{ $index }}" data-origin="{{ $plant->origin }}">
-					<a href="{{ $plant->image ? asset('storage/' . $plant->image) : 'assest/plantt.png' }}"  class="lsb-preview" data-lsb-group="header">
-						<div class="w3layouts_news_grid">
-                        <img src="{{ $plant->image ? asset('storage/' . $plant->image) : 'assest/plantt.png' }}" alt="{{ $plant->name }}" class="img-responsive">
-                        <div class="w3layouts_news_grid_pos">
-								<div class="wthree_text"><h3>{{ $plant->name }}</h3></div>
-                                <button class="learn-more" data-index="{{ $index }}">Read more</button>
-							</div>
-						</div>
-					</a>
-				</div>
-                @endforeach
-                 <!-- Modal Structure -->
-<div id="plantModal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="modalName"></h2>
-        <p id="modalOrigin"></p>
-        <p id="modalCare"></p>
-        <p id="modalDescription"></p>
+            <div class="w3layouts_gallery_grids" id="instructors-gallery">
+                <!-- AJAX will populate this -->
+            </div>
+        </div>
     </div>
-</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
 <!-- //gallery -->
 	<script src="js/lsb.min.js"></script>
 	<script>
@@ -327,69 +304,78 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								
 			});
 	</script>
-<!-- //here ends scrolling icon -->
 <script>
-        $(document).ready(function () {
-    // "Learn More" Button
-    $('.learn-more').click(function () {
-        var index = $(this).data('index');
-        var plant = @json($plants);
+$(document).ready(function() {
+    function fetchInstructors() {
+        $.ajax({
+            url: '{{ route('instructors.get') }}', // The route for fetching instructors
+            method: 'GET',
+            success: function(response) {
+                const gallery = $('#instructors-gallery');
+                gallery.empty(); // Clear previous results
 
-        if (plant[index]) {
-            $('#modalName').text(plant[index].name);
-            $('#modalOrigin').text('Origin: ' + plant[index].origin);
-            $('#modalCare').text('Care: ' + plant[index].care);
-            $('#modalDescription').text('Description: ' + plant[index].description);
+                const defaultImage = '{{ asset('assest/avatar.png') }}'; // Path to the default image
+                response.forEach(function(instructor) {
+                    const instructorImage = instructor.image ? '/storage/' + instructor.image : defaultImage;
+                    const instructorHtml = `
+                        <div class="instructor-card" 
+                             data-name="${instructor.name.toLowerCase()}" 
+                             data-location="${instructor.location.toLowerCase()}" 
+                             data-job="${instructor.job.toLowerCase()}">
+                            <img src="${instructorImage}" alt="${instructor.name}" class="instructor-image">
+                            <div class="instructor-details">
+                                <h3>${instructor.name}</h3>
+                                <p>Email: ${instructor.email}</p>
+                                <p>Location: ${instructor.location}</p>
+                                <p>Phone: ${instructor.phone}</p>
+                                <p>Job: ${instructor.job}</p>
+                                <a href="{{ route('pages.appointment') }}"><button class="learn-more">Read more</button></a>
+                            </div>
+                        </div>
+                    `;
+                    gallery.append(instructorHtml);
+                });
+            },
+            error: function(error) {
+                console.error('Error fetching instructors:', error);
+            }
+        });
+    }
 
-            $('#plantModal').show();
-        }
+    fetchInstructors(); // Initial fetch
+
+    $('#search-btn').click(function() {
+        const searchTerm = $('#search-box').val().toLowerCase();
+
+        $('.instructor-card').each(function() {
+            const card = $(this);
+            const cardName = card.data('name');
+            const cardLocation = card.data('location');
+            const cardJob = card.data('job');
+
+            // Check if the search term matches any part of the instructor's details
+            if (
+                cardName.indexOf(searchTerm) !== -1 ||
+                cardLocation.indexOf(searchTerm) !== -1 ||
+                cardJob.indexOf(searchTerm) !== -1
+            ) {
+                card.show();
+            } else {
+                card.hide();
+            }
+        });
     });
 
-    // Close modal
-    $('.close').click(function () {
-        $('#plantModal').hide();
-    });
-
-    // Close modal on outside click
-    $(window).click(function (event) {
-        if (event.target == $('#plantModal')[0]) {
-            $('#plantModal').hide();
-        }
+    // Optional: Add a keyup event to search as you type
+    $('#search-box').on('keyup', function() {
+        $('#search-btn').click();
     });
 });
-    </script>
-
-<script>
-    $(document).ready(function() {
-        function filterPlants() {
-            var query = $('#searchInput').val().toLowerCase();
-
-            $('.w3layouts_gallery_grid').each(function() {
-                var plantName = $(this).find('img').attr('alt').toLowerCase();
-                var plantOrigin = $(this).data('origin').toLowerCase();
-
-                var nameMatch = plantName.includes(query);
-                var originMatch = plantOrigin.includes(query);
-
-                if (nameMatch || originMatch) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            });
-        }
-
-        // Filter plants on keyup event
-        $('#searchInput').on('keyup', filterPlants);
-
-        // Optionally, filter plants on button click
-        $('#searchButton').on('click', filterPlants);
-    });
 </script>
 
 
 
-	
+
 </body>
 
 </html>

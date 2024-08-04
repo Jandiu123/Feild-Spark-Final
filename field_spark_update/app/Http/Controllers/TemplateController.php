@@ -38,4 +38,10 @@ class TemplateController extends Controller
     {
         return view('pages.contactus');
     }
+
+    public function index8()
+    {
+        return view('pages.instructors');
+    }
+    
 }

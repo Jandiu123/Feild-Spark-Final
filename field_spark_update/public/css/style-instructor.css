@@ -1361,26 +1361,153 @@ figure.agileits_effect_moses:hover img {
     margin: 1em 0;
 }
 /*-- //testimonials --*/
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    margin: 5px;
+    width: 300px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a0d034;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #7fb304;
+}
+
 /*-- gallery --*/
 .w3layouts_gallery_grids {
-    padding-top: 1em;
-	height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+	margin-top: 20px;
 }
+
 .w3layouts_gallery_grid {
-    margin-top: 2em;
-	height: 20%;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    text-align: center; /* Center text */
+    padding: 20px;
 }
-.gallerie-imagebox img {	
-	transition: all 500ms;
-	-webkit-transition: all 500ms;
-	-moz-transition: all 500ms;
-	-ms-transition: all 500ms;
-	-o-transition: all 500ms;
+
+.w3layouts_news_grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+	overflow: hidden;
 }
-.gallerie-imagebox .loading {
-	opacity: 0.3;
+
+.circle-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #4CAF50;
+    margin-bottom: 15px;
 }
-/*-- //gallery --*/
+
+.w3layouts_news_grid_pos {
+    position: absolute; /* Absolute positioning to overlay text and button */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: #fff; /* Text color */
+    padding: 15px; /* Padding around text */
+    box-sizing: border-box; 
+}
+
+
+
+#instructors-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.instructor-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px); /* Three cards per row with gap */
+    max-width: 300px; /* Set a max-width for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+}
+
+.instructor-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.instructor-image {
+    width: 100px; /* Medium size for the profile picture */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image circular */
+    margin-top: 15px; /* Space from the top of the card */
+}
+
+.instructor-details {
+    padding: 15px;
+    text-align: center; /* Center text inside the details */
+}
+
+.instructor-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.instructor-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.learn-more {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Make button a block element to center it */
+    margin: 15px auto; /* Center button horizontally */
+}
+
+.learn-more:hover {
+    background: #1a451c;
+}
+
+
 /*-- mail --*/
 .agileits_mail_grid_right1{
 	padding:3em;
@@ -1512,57 +1639,6 @@ figure.agileits_effect_moses:hover img {
 	width: 100%;
 	min-height: 500px;
 }
-/* CSS for the search box and button */
-.search-container {
-    margin: 20px auto;
-    text-align: center;
-	margin-left: 10px;
-}
-
-#search-box {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#search-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #a0d034;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-#search-btn:hover {
-    background-color: #6e9b05;
-}
-.search-container input {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px; /* Adjust width as needed */
-}
-
-.search-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #a0d034;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-.search-container button:hover {
-    background-color: #6e9b05;
-}
-
 /*-- //mail --*/
 /*-- icons --*/
 .grid_3.grid_4.w3_agileits_icons_page {

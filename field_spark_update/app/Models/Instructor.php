@@ -25,6 +25,12 @@ class Instructor extends Authenticatable
         'password',
     ];
 
+    public function resources()
+    {
+    return $this->hasMany(Resource::class);
+     }
+
+
     /**
      * The attributes that should be hidden for serialization.
      *

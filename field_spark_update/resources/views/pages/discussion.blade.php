@@ -18,10 +18,10 @@
 							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
 								<ul class="w3layouts_menu__list">
 									<li class="active"><a href="{{ route('dashboard') }}">Home</a></li>
-									<li><a href="/aboutus">Appointments</a></li> 
+									<li><a href="{{ route('pages.appointment') }}">Appointments</a></li> 
 									<li><a href="{{ route('pages.discussion') }}">Discussion Forum</a></li>
 									<li><a href="{{ route('pages.plantinfo') }}">Plants</a></li> 
-									<li><a href="/contactus">Resources</a></li>
+									<li><a href="{{ route('pages.resource') }}">Resources</a></li>
 									<li class="dropdown">
                                     @auth
                                     <div class="profile-dropdown">
@@ -46,6 +46,17 @@
 			</div>
         </nav>
 @endsection
+   
+@section('breadcrumbs')
+            <div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="{{ route('dashboard') }}">Dashboard</a><span>/</span></li>
+					<li><i class="fa fa-picture-o" aria-hidden="true"></i>Farmer's Discussion Forum</li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"> </div>
+@endsection
 
 @section('forum')
         <div class="forum-header">
@@ -69,6 +80,8 @@
             <button onclick="addQuestion()">Submit</button>
         </div>
 @endsection
+
+
 
 @section('question')
         <button class="btn_new" onclick="backToQuestions()">Back</button>
