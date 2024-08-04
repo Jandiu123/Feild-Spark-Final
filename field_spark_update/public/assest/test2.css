@@ -20,7 +20,6 @@
     cursor: pointer;
     margin-left: -7%;
 }
-
 /* nav {
     display: flex;
     padding: 2% 0%;
@@ -199,7 +198,7 @@ button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
-    margin: 20px 10px;
+    margin: 20px 10px 20px ;
     border-radius: 25px;
     font-weight: bold;
     border: 2px solid #06892f;
@@ -210,6 +209,12 @@ button {
     overflow: hidden;
 }
 
+.link{
+    color: #fff;
+}
+.new-link{
+    color: #fff;
+}
 button span {
     background: #06892f;
     height: 100%;
@@ -221,7 +226,6 @@ button span {
     z-index: -1;
     transition: 0.5s;
 }
-
 button:hover span {
     width: 100%;
 }

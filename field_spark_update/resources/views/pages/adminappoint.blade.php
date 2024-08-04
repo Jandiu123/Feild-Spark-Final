@@ -1,9 +1,9 @@
-@extends('Layout.instructordashlayout')
+@extends('Layout.adminappointlayout')
 
-@section('nav')
-<nav>
+
+@section('navbar')
             <div class="w3_agileits_banner_main_grid">
-                <div class="w3_agile_logo">
+               <div class="w3_agile_logo">
 					<h1><a href="{{ route('pages.instructordashboard') }}"><span>F</span>ieldSpark<i>Grow healthy products</i></a></h1>
 				</div>
 				<div class="agileits_w3layouts_menu">
@@ -22,9 +22,9 @@
 									<li><a href="{{ route('pages.instructorplant') }}">Plants</a></li> 
 									<li><a href="{{ route('pages.adminresource') }}">Resources</a></li>
 									<li class="dropdown">
-                                    @auth
+                                    @auth('instructor')
                                     <div class="profile-dropdown">
-                                         <button class="profile-button">{{ Auth::user()->name }}</button>
+                                         <button class="profile-button">{{ Auth::guard('instructor')->user()->name }}</button>
                                          <div class="profile-menu">
                                                <a href="{{ route('profile.show') }}">Profile</a>
                                                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
@@ -43,78 +43,48 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-</nav>
-    <div class="content">
-        <h1>Welcome To The Place Where Natural Beauty Born</h1>
-        <p>Field Spark empowers farmers with cutting-edge technology, offering real-time data, expert guidance,<br> and sustainable solutions to boost agricultural productivity.</p>
-        <div>
-              <a href="{{ route('pages.adminappoint') }}" class="new-link"><button type="button"><span></span>Check Appoinments</button></a>
-              <a href="{{ route('pages.instructorplant') }}" class="new-link"><button type="button"><span></span>Manage plant informations</button></a>
-        </div> 
-
-    </div>
 @endsection
 
-@section('background')
-			<h3 class="agileits_w3layouts_head agileinfo_head w3_head"><span>What</span> we do</h3>
-			<div class="w3_agile_image">
-				<img src="images/17.png" alt=" " class="img-responsive-new">
-			</div>
-			<p class="agile_para agileits_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
-			<div class="w3ls_news_grids">
-				<div class="col-md-4 w3_agileits_services_bottom_grid">
-					<div class="wthree_services_bottom_grid1">
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_services_bottom_grid1_pos">
-							<h4>Fertilizing</h4>
-						</div>
-					</div>
-					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
-						<!-- <div class="agileits_w3layouts_learn_more hvr-radial-out">
-							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-						</div> -->
-					</div>
-				</div>
-				<div class="col-md-4 w3_agileits_services_bottom_grid">
-					<div class="wthree_services_bottom_grid1">
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_services_bottom_grid1_pos">
-							<h4>Soil Testing</h4>
-						</div>
-					</div>
-					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
-						<!-- <div class="agileits_w3layouts_learn_more hvr-radial-out">
-							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-						</div> -->
-					</div>
-				</div>
-				<div class="col-md-4 w3_agileits_services_bottom_grid">
-					<div class="wthree_services_bottom_grid1">
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_services_bottom_grid1_pos">
-							<h4>Planting</h4>
-						</div>
-					</div>
-					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
-						<!-- <div class="agileits_w3layouts_learn_more hvr-radial-out">
-							<a href="/" data-toggle="modal" data-target="#myModal">Read More</a>
-						</div> -->
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+
+@section('table')
+<h2>Manage Appointments</h2>
+<table id="appointmentsTable">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Details</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- AJAX will populate this -->
+    </tbody>
+</table>
+
+@endsection
+
+@section('transfer')
+<!-- Modal Structure -->
+<div id="transferModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h4>Select Instructor</h4>
+        <ul id="instructorList">
+            <!-- Instructors will be loaded here -->
+        </ul>
+        <button id="confirmTransfer">Transfer</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
 @endsection
 
 @section('footer')
-    <div class="footer">
-		<div class="container">
+<div class="container">
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-					<a href="/"><img src="assest/logo34.png" alt="logo" class="logo-f"></a>
+						<h2><a href="index.html"><span>G</span>erminate<i>Grow healthy products</i></a></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
@@ -160,5 +130,4 @@
 			<div class="container">
 				<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
 		</div>
-	</div>
 @endsection

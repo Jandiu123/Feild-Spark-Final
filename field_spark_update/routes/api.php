@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\InstructorAuthController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\AppointmentController;
+
+
 
 Route::get('/questions', [QuestionController::class, 'index']);
 Route::post('/questions', [QuestionController::class, 'store']);

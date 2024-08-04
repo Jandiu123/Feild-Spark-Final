@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
+use App\Models\Appointment;
 
 class InstructorAuthController extends Controller
 {
@@ -67,6 +68,42 @@ class InstructorAuthController extends Controller
         $request->session()->regenerateToken();
 
         return redirect()->route('login')->with('status', 'You have been logged out.');
+    }
+
+    public function getInstructors()
+    {
+        // Retrieve all instructors
+        $instructors = Instructor::all();
+
+        // Return JSON response
+        return response()->json($instructors);
+    }
+
+
+    public function getAppointments($instructor_id)
+    {
+        // Fetch appointments for the instructor
+        $appointments = Appointment::where('instructor_id', $instructor_id)->get();
+    
+        // Return JSON response
+        return response()->json($appointments);
+    }
+    public function manageAppointments()
+    {
+        // Get the instructor ID from the authenticated user
+        $instructorId = Auth::id();
+
+        // Fetch appointments for the instructor
+        $appointments = Appointment::where('instructor_id', $instructorId)->get();
+
+        // Return view with appointments
+        return view('pages.adminappoint', compact('appointments'));
+    }
+
+    public function index()
+    {
+        $instructors = Instructor::all();
+        return view('instructors.index', compact('instructors'));
     }
     
 }

@@ -2,7 +2,6 @@
 
 
 @section('navbar')
-        <nav>
             <div class="w3_agileits_banner_main_grid">
                 <div class="w3_agile_logo">
 					<h1><a href="{{ route('pages.instructordashboard') }}"><span>F</span>ieldSpark<i>Grow healthy products</i></a></h1>
@@ -18,10 +17,10 @@
 							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
 								<ul class="w3layouts_menu__list">
 									<li class="active"><a href="{{ route('pages.instructordashboard') }}">Home</a></li>
-									<li><a href="/aboutus">Appointments</a></li> 
-									<li><a href="{{ route('pages.discussion') }}">Discussion Forum</a></li>
+									<li><a href="{{ route('pages.adminappoint') }}">Appointments</a></li> 
+									<li><a href="{{ route('pages.idiscussion') }}">Discussion Forum</a></li>
 									<li><a href="{{ route('pages.instructorplant') }}">Plants</a></li> 
-									<li><a href="/contactus">Resources</a></li>
+									<li><a href="{{ route('pages.adminresource') }}">Resources</a></li>
 									<li class="dropdown">
                                     @auth('instructor')
                                     <div class="profile-dropdown">
@@ -44,12 +43,11 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-        </nav>
 @endsection
 
 @section('forum')
         <div class="forum-header">
-            <h1>Farmers Discussion forum</h1>
+            <h1>Instructor Discussion Forum</h1>
             <input type="text" placeholder="Find your solutions" id="search">
             <button onclick="searchQuestions()">Search</button>
         </div>

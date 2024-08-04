@@ -1,10 +1,9 @@
 @extends('Layout.instructorplantlayout')
 
 @section('navbar')
-        <nav>
             <div class="w3_agileits_banner_main_grid">
                 <div class="w3_agile_logo">
-					<h1><a href="{{ route('dashboard') }}"><span>F</span>ieldSpark<i>Grow healthy products</i></a></h1>
+					<h1><a href="{{ route('pages.instructordashboard') }}"><span>F</span>ieldSpark<i>Grow healthy products</i></a></h1>
 				</div>
 				<div class="agileits_w3layouts_menu">
 					<div class="shy-menu">
@@ -16,11 +15,11 @@
 						<div class="shy-menu-panel">
 							<nav class="menu menu--horatio link-effect-8" id="link-effect-8">
 								<ul class="w3layouts_menu__list">
-									<li class="active"><a href="{{ route('dashboard') }}">Home</a></li>
-									<li><a href="/aboutus">Appointments</a></li> 
-									<li><a href="{{ route('pages.discussion') }}">Discussion Forum</a></li>
+									<li class="active"><a href="{{ route('pages.instructordashboard') }}">Home</a></li>
+									<li><a href="{{ route('pages.adminappoint') }}">Appointments</a></li> 
+									<li><a href="{{ route('pages.idiscussion') }}">Discussion Forum</a></li>
 									<li><a href="{{ route('pages.plantinfo') }}">Plants</a></li> 
-									<li><a href="/contactus">Resources</a></li>
+									<li><a href="{{ route('pages.adminresource') }}">Resources</a></li>
 									<li class="dropdown">
                                     @auth('instructor')
                                     <div class="profile-dropdown">
@@ -43,7 +42,6 @@
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-        </nav>
 @endsection
 
 
@@ -69,14 +67,69 @@
     <div class="form-group">
         <input type="file" id="plant-image" name="image" accept="image/*">
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" class="btn-new">Submit</button>
     </form>
 
 </main>
 @endsection
 
+@section('plantTable')
+<main>
+<h2>Manage Plants</h2>
+    <table id="plantsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Origin</th>
+                <th>Care</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- AJAX will populate this -->
+        </tbody>
+    </table>
+</main>
+<!-- Edit Plant Modal -->
+<div id="editPlantModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Plant</h2>
+        <form id="editPlantForm">
+            <input type="hidden" id="editPlantId">
+            <div class="form-group">
+                <label for="editName">Name</label>
+                <input type="text" id="editName" required>
+            </div>
+            <div class="form-group">
+                <label for="editOrigin">Origin</label>
+                <input type="text" id="editOrigin" required>
+            </div>
+            <div class="form-group">
+                <label for="editCare">Care</label>
+                <input type="text" id="editCare" required>
+            </div>
+            <div class="form-group">
+                <label for="editDescription">Description</label>
+                <textarea id="editDescription" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="editImage">Image</label>
+                <input type="file" id="editImage" accept="image/*">
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+@endsection
+
+
+
 @section('footer')
-<div class="container">
+<div class="container3">
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
@@ -123,7 +176,7 @@
 			</div>
 		</div>
 		<div class="w3_agileits_footer_copy">
-			<div class="container">
+			<div class="container3">
 				<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
 		</div>
 @endsection

@@ -12,7 +12,18 @@
 
 <body>
     @include('Libraries.discussionstyle') 
-        @yield('navbar')
+	<div class="banner1">
+		<div class="container">
+           @yield('navbar')
+        </div>
+    </div>
+	<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			@yield('breadcrumbs')
+		</div>
+	</div>
+<!-- //breadcrumbs -->
     <div class="forum-container">
        @yield('forum')
     </div>
