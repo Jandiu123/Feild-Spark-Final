@@ -224,8 +224,6 @@
         transferModal.style.display = 'none';
     });
 });
-
-
     </script>
 </body>
 </html>
