@@ -125,6 +125,9 @@ Route::post('/api/resources/{id}', [ResourceController::class, 'update']);
 // Route to delete a resource
 Route::delete('/api/resources/{id}', [ResourceController::class, 'destroy']);
 
+// routes/web.php
+
+Route::post('/create-zoom-meeting', 'ZoomController@createMeeting')->name('create.zoom.meeting');
 
 
 
