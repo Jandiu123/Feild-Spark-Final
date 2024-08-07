@@ -70,7 +70,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="container">
 			<div class="w3_agileits_banner_main_grid">
 			    <div class="w3_agile_logo">
-					<h1><a href="/"><span>F</span>ieldSpark<i>Grow healthy products</i></a></h1>
+					<h1><a href="/"><span>F</span>ield-Spark<i>Spark Your Farm's Future</i></a></h1>
 				</div>
 				<div class="agile_social_icons_banner">
 					<ul class="agileits_social_list">
@@ -112,9 +112,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
 			<div class="w3_banner_info">
 				<div class="w3_banner_info_grid">
-					<h3 class="test">I'm Planting A Tree To Teach Me To Gather Strength From My Deepest Roots</h3>
-					<p>Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit 
-						sollicitudin. Nunc tortor lorem, viverra sed diam ut, blandit efficitur leo.</p>
+					<h3 class="test">Ignite Your Farm's Potential</h3>
+					<p>FieldSpark is Sri Lanka's premier online platform connecting farmers with expert instructors. Discover valuable resources, seek expert advice, and grow your agricultural knowledge with our community-driven approach.</p>
 					<ul>
 						<li><a href="contact.html" class="w3l_contact">Contact Us</a></li>
 						<li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">Read More</a></li>
@@ -136,20 +135,13 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					Germinate
+					Field Spark
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
 				</div>
 				<section>
 					<div class="modal-body">
 						<img src="images/4.jpg" alt=" " class="img-responsive" />
-						<p>Ut enim ad minima veniam, quis nostrum 
-							exercitationem ullam corporis suscipit laboriosam, 
-							nisi ut aliquid ex ea commodi consequatur? Quis autem 
-							vel eum iure reprehenderit qui in ea voluptate velit 
-							esse quam nihil molestiae consequatur, vel illum qui 
-							dolorem eum fugiat quo voluptas nulla pariatur.
-							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
-								esse quam nihil molestiae consequatur.</i></p>
+						<p>FieldSpark is Sri Lanka's leading online agricultural hub connecting farmers with expert knowledge. Our platform empowers farmers to thrive by providing access to valuable resources, expert guidance, and a supportive community. From crop management techniques to market trends, FieldSpark offers a comprehensive learning experience. Join us in revolutionizing Sri Lankan agriculture through knowledge sharing and collaboration.</p>
 					</div>
 				</section>
 			</div>
@@ -167,8 +159,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</div>
 					</div>
 					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
-						<h4>Free Consultation</h4>
-						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+						<h4>Connect with Experts</h4>
+						<p>Find experienced agricultural instructors to guide you through your farming journey. Search for experts by crop, region, or specialization.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -183,8 +175,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</div>
 					</div>
 					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
-						<h4>Certified Products</h4>
-						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+						<h4>Access Knowledge Base</h4>
+						<p>Explore a rich repository of agricultural information, including best practices, crop management techniques, and market trends.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -199,8 +191,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</div>
 					</div>
 					<div class="col-xs-8 wthree_banner_bottom_grid_right">	
-						<h4>Free Helpline</h4>
-						<p>Morbi viverra lacus commodo felis semper, eu iaculis lectus feugiat.</p>
+						<h4>Join the Farming Community</h4>
+						<p>Connect with fellow farmers, share experiences, and learn from others. Participate in discussions, ask questions, and build a strong network.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -218,7 +210,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">Discover the vibrant world of nature through our gallery of fresh fruits, crisp vegetables, and lush plants.</p>
 		</div>
 <!---728x90--->
 
@@ -261,6 +253,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						<figcaption>Apples</figcaption>
 					</figure>
 				</li>
+				<!--asparagus.jpeg(asparagus),beet.jpg.webp(beetroot),carrot.png(carrot),coconut.jpg.avif(coconut),jackfruit.webp(jackfruit)-->
 			</ol>
 		</div>
 	</div>
@@ -268,15 +261,14 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!-- welcome-bottom -->
 	<div id="welcome_bottom" class="welcome-bottom">
 		<div class="col-md-6 wthree_welcome_bottom_left">
-			<h3>we work hard and make our country <span>greenery</span></h3>
-			<p>Nullam pretium euismod orci ac porta. Interdum et malesuada fames ac ante
-				ipsum primis in faucibus. Donec at scelerisque dolor, vel placerat mi.</p>
+			<h3>Daily <span>Agri-Pulse</span></h3>
+			<p>Stay informed with real-time updates on daily resource additions, appointments, answered questions, and plant identifications. Your farm's heartbeat at a glance.</p>
 			<div class="col-md-6 wthree_welcome_bottom_left_grid">
 				<div class="w3l_social_icon_gridl">
-					<img src="images/8.png" alt=" " class="img-responsive" />
+					<img src="images/image.png" alt=" " class="img-responsive" />
 				</div>
 				<div class="w3l_social_icon_gridr">
-					<h4 class="counter">23,536</h4>
+					<h4 class="counter">96</h4>
 				</div>
 				<div class="clearfix"> </div>
 				<div class="w3l_social_icon_grid_pos">
@@ -285,10 +277,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
 			<div class="col-md-6 wthree_welcome_bottom_left_grid">
 				<div class="w3l_social_icon_gridl">
-					<img src="images/9.png" alt=" " class="img-responsive" />
+					<img src="images/appointment.png" alt=" " class="img-responsive" />
 				</div>
 				<div class="w3l_social_icon_gridr">
-					<h4 class="counter">53,234</h4>
+					<h4 class="counter">53</h4>
 				</div>
 				<div class="clearfix"> </div>
 				<div class="w3l_social_icon_grid_pos">
@@ -297,10 +289,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
 			<div class="col-md-6 wthree_welcome_bottom_left_grid">
 				<div class="w3l_social_icon_gridl">
-					<img src="images/10.png" alt=" " class="img-responsive" />
+					<img src="images/QA.png" alt=" " class="img-responsive" />
 				</div>
 				<div class="w3l_social_icon_gridr">
-					<h4 class="counter">43,568</h4>
+					<h4 class="counter">137</h4>
 				</div>
 				<div class="clearfix"> </div>
 				<div class="w3l_social_icon_grid_pos">
@@ -309,10 +301,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
 			<div class="col-md-6 wthree_welcome_bottom_left_grid">
 				<div class="w3l_social_icon_gridl">
-					<img src="images/11.png" alt=" " class="img-responsive" />
+					<img src="images/plant.png" alt=" " class="img-responsive" />
 				</div>
 				<div class="w3l_social_icon_gridr">
-					<h4 class="counter">12,432</h4>
+					<h4 class="counter">31</h4>
 				</div>
 				<div class="clearfix"> </div>
 				<div class="w3l_social_icon_grid_pos">
@@ -327,8 +319,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<img src="images/4.jpg" alt=" " class="img-responsive" />
 					<figcaption>
 						<h4>Plantation <span>For Future Growth</span></h4>
-						<p>Nullam in luctus lectus. Mauris lobortis dui mauris, non vestibulum 
-							magna blandit at scelerisque tellus ipsum nec ipsum.</p>
+						<p>Cultivate a sustainable future with our expert guidance. Explore profitable plantation options, from tree selection to harvesting. Maximize your land's potential and secure a greener tomorrow.</p>
 					</figcaption>			
 				</figure>
 			</div>
@@ -339,62 +330,60 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!-- news -->
 	<div class="welcome">
 		<div class="container">
-			<h3 class="agileits_w3layouts_head">Latest <span>News</span> from plantation</h3>
+			<h3 class="agileits_w3layouts_head">Paddy Crop <span>Calenders</span> </h3>
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive">
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">Crop calendars are essential tools that guide farmers in optimizing planting, harvesting, and resource management for maximum yield and efficiency.</p>
 			<div class="w3ls_news_grids">
 				<div class="col-md-4 w3ls_news_grid">
 					<div class="w3layouts_news_grid">
-						<img src="images/3.jpg" alt=" " class="img-responsive" />
+						<img src="images/rainfall.jpg" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
-							<div class="wthree_text"><h3>plantation</h3></div>
+							<div class="wthree_text"><h3>Dry & Intermediate Zone (Rainfed)</h3></div>
 						</div>
 					</div>
 					<div class="agileits_w3layouts_news_grid">
 						<ul>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i>25 March 2017</li>
+							<li><i class="fa fa-calendar" aria-hidden="true"></i>25 March 2024</li>
 							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
 						</ul>
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Design & Planting</a></h4>
-						<p>Vivamus lacinia odio ut euismod eleifend. Cum sociis natoque penatibus et 
-							magnis dis parturient montes.</p>
+						<h4><a href="#" data-toggle="modal" data-target="#myModal">Paddy Crop Calender -1</a></h4>
+						<p>Crop calendars for the Dry & Intermediate Zones provide crucial guidance for farmers to optimize planting and harvesting based on erratic rainfall patterns, maximizing yields in challenging conditions.</p>
 					</div>
 				</div>
 				<div class="col-md-4 w3ls_news_grid">
 					<div class="w3layouts_news_grid">
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
+						<img src="images/irrigation.jpg" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
-							<div class="wthree_text"><h3>plantation</h3></div>
+							<div class="wthree_text"><h3>Dry & Intermediate Zone (Irrigated)</h3></div>
 						</div>
 					</div>
 					<div class="agileits_w3layouts_news_grid">
 						<ul>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i>28 March 2017</li>
+							<li><i class="fa fa-calendar" aria-hidden="true"></i>04 MAy 2024</li>
 							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
 						</ul>
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Quality & Reliability</a></h4>
-						<p>Vivamus lacinia odio ut euismod eleifend. Cum sociis natoque penatibus et 
-							magnis dis parturient montes.</p>
+						<h4><a href="#" data-toggle="modal" data-target="#myModal">Paddy Crop Calender -2</a></h4>
+						<p>Crop calendars for Dry & Intermediate Zones (Irrigated) provide crucial guidance on optimal planting, harvesting, and water management for efficient and profitable crop production in these specific climatic conditions.</p>
 					</div>
 				</div>
 				<div class="col-md-4 w3ls_news_grid">
 					<div class="w3layouts_news_grid">
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
+						<img src="images/wetzone.jpg" alt=" " class="img-responsive" />
 						<div class="w3layouts_news_grid_pos">
-							<div class="wthree_text"><h3>plantation</h3></div>
+							<div class="wthree_text"><h3>Wet Zone</h3></div>
 						</div>
 					</div>
 					<div class="agileits_w3layouts_news_grid">
 						<ul>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i>30 March 2017</li>
+							<li><i class="fa fa-calendar" aria-hidden="true"></i>30 June 2024</li>
 							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
 						</ul>
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Satisfied Customers</a></h4>
-						<p>Vivamus lacinia odio ut euismod eleifend. Cum sociis natoque penatibus et 
-							magnis dis parturient montes.</p>
+						<h4><a href="#" data-toggle="modal" data-target="#myModal">Paddy Crop Calender -3</a></h4>
+						<p>Crop calendars tailored for the Wet Zone provide farmers with specific guidance on optimal planting and harvesting times to maximize yields by effectively utilizing the region's abundant rainfall.</p>
 					</div>
+					<!---Crop cal1- cal1.png ,Crop cal2- cal2.png ,Crop cal3- cal3.png-->
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -408,7 +397,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/12.png" alt=" " class="img-responsive">
 			</div>
-			<p class="agile_para agileits_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para agileits_para">Subscribe to our newsletter for expert farming tips, the latest agricultural news, and exclusive offers delivered straight to your inbox.</p>
 			<div class="w3ls_news_grids w3ls_newsletter_grids">
 				<form action="#" method="post">
 					<input name="Your Name" placeholder="Your Name" type="text" required="">
@@ -430,8 +419,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Contact Info</h3>
-					<h4>Call Us <span>+1234 567 891</span></h4>
-					<p>My Company, 875 Jewel Road <span>8907 Ukraine.</span></p>
+					<h4>Call Us <span>0777 567 891</span></h4>
+					<p>No,875 Lavinia Road, <span>Kegalle, Sri Lanka</span></p>
 					<ul class="agileits_social_list">
 						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -443,8 +432,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<h3>Navigation</h3>
 					<ul class="w3layouts_footer_nav">
 						<li><a href="index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
-						<li><a href="icons.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Web Icons</a></li>
-						<li><a href="typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Typography</a></li>
+						<li><a href="icons.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>About Us</a></li>
+						<li><a href="typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Services</a></li>
+						<li><a href="typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Plants</a></li>
 						<li><a href="contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
 					</ul>
 				</div>
