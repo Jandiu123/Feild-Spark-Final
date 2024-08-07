@@ -156,14 +156,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">We deliver expert agricultural solutions, blending innovation with sustainability to ensure your farm thrives.</p>
 			<div class="w3ls_news_grids"> 
 				<div class="col-md-6 w3_agile_about_grid_left">
-					<h3>Pellentesque a ligula nec dui ornare pulvinar in non sem condimentum erat</h3>
-					<p><i>In eleifend nisl fermentum bibendum euismod. Pellentesque ac mi quis tortor 
-						consequat scelerisque.</i> Sed eros urna, rhoncus nec tortor quis, pretium vestibulum
-						purus. Nunc quis augue nibh. Proin non enim non nulla scelerisque scelerisque 
-						vitae non est. Quisque iaculis leo at lacus malesuada mattis.</p>
+					<h3>Exceptional Expertise and Innovative Solutions for Your Agricultural Needs</h3>
+					<p><i>Growing with you: Expert solutions for a sustainable agricultural future.</i> We provide unparalleled expertise and innovative solutions tailored to your agricultural needs. Our commitment to sustainability and cutting-edge practices ensures that your farm operates efficiently and grows successfully. With dedicated support and a focus on long-term results, we help you achieve your goals and thrive in a competitive industry.</p>
 				</div>
 				<div class="col-md-6 w3_agile_about_grid_right">
 					<div class="skillbar" data-percent="78">
@@ -234,7 +231,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">Meet our dedicated experts who bring passion and expertise to every aspect of your agricultural success.</p>
 			<div class="w3ls_news_grids w3_agileits_team_grids"> 
 				<div class="col-md-3 w3_agileits_team_grid"> 
 					<div class="w3layouts_news_grid">

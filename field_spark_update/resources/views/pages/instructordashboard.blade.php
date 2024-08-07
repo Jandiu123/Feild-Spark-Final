@@ -60,7 +60,7 @@
 			<div class="w3_agile_image">
 				<img src="images/17.png" alt=" " class="img-responsive-new">
 			</div>
-			<p class="agile_para agileits_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para agileits_para">We support farmers by providing knowledge, sustainable practices, and modern tools, ensuring a resilient and thriving agricultural future.</p>
 			<div class="w3ls_news_grids">
 				<div class="col-md-4 w3_agileits_services_bottom_grid">
 					<div class="wthree_services_bottom_grid1">
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
+						<p>Fertilizing enriches soil, ensuring plants receive the nutrients they need to grow strong and healthy, enhancing yields.</p>
 						<!-- <div class="agileits_w3layouts_learn_more hvr-radial-out">
 							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
 						</div> -->
@@ -84,7 +84,7 @@
 						</div>
 					</div>
 					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
+						<p>Soil testing analyzes nutrient content and pH levels, helping gardeners adjust their care for optimal plant growth.</p>
 						<!-- <div class="agileits_w3layouts_learn_more hvr-radial-out">
 							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
 						</div> -->
@@ -98,7 +98,7 @@
 						</div>
 					</div>
 					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
+						<p>Planting seeds or seedlings in prepared soil starts the journey of nurturing a garden, leading to fruitful harvests.</p>
 						<!-- <div class="agileits_w3layouts_learn_more hvr-radial-out">
 							<a href="/" data-toggle="modal" data-target="#myModal">Read More</a>
 						</div> -->
