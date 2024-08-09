@@ -68,7 +68,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="container">
 			<div class="w3_agileits_banner_main_grid">
 				<div class="w3_agile_logo">
-					<h1><a href="/"><span>G</span>erminate<i>Grow healthy products</i></a></h1>
+				<h1><a href="/"><span>F</span>eildSpark<i>Grow healthy products</i></a></h1>
 				</div>
 				<div class="agile_social_icons_banner">
 					<ul class="agileits_social_list">
@@ -163,7 +163,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">Discover the beauty of nature with our diverse plant collection. Perfect for every space, bringing life and tranquility to your home</p>
 <!---728x90--->
 
 			<div class="w3ls_news_grids">
@@ -195,7 +195,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-4 w3_agile_mail_right">
 					<div class="w3_agileits_mail_right_grid">
 						<h4>About Plantation</h4>
-						<p>Donec libero lectus, feugiat vel elit nec, mattis tempor mi ante.</p>
+						<p>We're here to help! Contact us with any questions, feedback, or concerns, and we'll respond promptly to assist you.</p>
 						<h5>Follow Us On</h5>
 						<ul class="agileits_social_list">
 							<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -204,7 +204,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
 						</ul>
 						<div class="w3_agileits_mail_right_grid_pos">
-							<img src="images/12.jpg" alt=" " class="img-responsive" />
+							<img src="images/New.jpeg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="w3_agileits_mail_right_grid_main">
@@ -214,7 +214,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 							<div class="w3layouts_mail_grid_left2">
 								<h3>Mail Us</h3>
-								<a href="mailto:info@example.com">info@example.com</a>
+								<a href="mailto:info@example.com">info@fieldspark.com</a>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -224,7 +224,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 							<div class="w3layouts_mail_grid_left2">
 								<h3>Address</h3>
-								<p>My Company 8907 Ukraine.</p>
+								<p>No.88, Main Road, Kegalle.</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -234,7 +234,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 							<div class="w3layouts_mail_grid_left2">
 								<h3>Phone</h3>
-								<p>+(0121) 121 121</p>
+								<p>+(94) 713300619</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -244,55 +244,23 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			</div>
 		</div>
 	</div>
-	<div id="map"></div>
+	<div id="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9191801264265!2d80.36477617503385!3d7.250038914294174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae315a79b866beb%3A0xe9cc94c3d641c826!2s4GBx%20Solutions!5e0!3m2!1sen!2slk!4v1723086363578!5m2!1sen!2slk" width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
 <!-- //contact -->
-	 <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(33.6, 49.966667), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [	{		"featureType":"landscape",		"stylers":[			{				"hue":"#FFA800"			},			{				"saturation":0			},			{				"lightness":0			},			{				"gamma":1			}		]	},	{		"featureType":"road.highway",		"stylers":[			{				"hue":"#53FF00"			},			{				"saturation":-73			},			{				"lightness":40			},			{				"gamma":1			}		]	},	{		"featureType":"road.arterial",		"stylers":[			{				"hue":"#FBFF00"			},			{				"saturation":0			},			{				"lightness":0			},			{				"gamma":1			}		]	},	{		"featureType":"road.local",		"stylers":[			{				"hue":"#00FFFD"			},			{				"saturation":0			},			{				"lightness":30			},			{				"gamma":1			}		]	},	{		"featureType":"water",		"stylers":[			{				"hue":"#00BFFF"			},			{				"saturation":6			},			{				"lightness":8			},			{				"gamma":1			}		]	},	{		"featureType":"poi",		"stylers":[			{				"hue":"#679714"			},			{				"saturation":33.4			},			{				"lightness":-25.4			},			{				"gamma":1			}		]	}]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(33.6, 49.966667),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
-        </script>
 <!-- footer -->
-	<div class="footer">
-		<div class="container">
+<div class="footer">
+	    <div class="container">
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-						<h2><a href="index.html"><span>G</span>erminate<i>Grow healthy products</i></a></h2>
+					<h2><a href="/"><span>F</span>eildSpark<i>Grow healthy products</i></a></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Contact Info</h3>
-					<h4>Call Us <span>+1234 567 891</span></h4>
-					<p>My Company, 875 Jewel Road <span>8907 Ukraine.</span></p>
+					<h4>Call Us <span>+94 713300619</span></h4>
+					<p>Field Spark,No.78, Main Road, Kegalle. <span>71000 Sri Lanka.</span></p>
 					<ul class="agileits_social_list">
 						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -303,10 +271,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
 					<h3>Navigation</h3>
 					<ul class="w3layouts_footer_nav">
-						<li><a href="index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
-						<li><a href="icons.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Web Icons</a></li>
-						<li><a href="typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Typography</a></li>
-						<li><a href="contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
+						<li><a href="/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+						<li><a href="/aboutus"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>About Us</a></li>
+						<li><a href="/services"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Services</a></li>
+						<li><a href="/contactus"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 agileinfo_footer_grid">
@@ -330,10 +298,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		</div>
 		<div class="w3_agileits_footer_copy">
 			<div class="container">
-				<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+				<p>Field Spark 2024</p>
+				<p>	&copy; Powered by 4GBx</p>
 			</div>
 		</div>
-	</div>
+</div>
 <!-- //footer -->
 <!-- menu -->
 	<script>

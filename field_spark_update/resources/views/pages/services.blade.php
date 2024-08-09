@@ -68,7 +68,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<div class="container">
 			<div class="w3_agileits_banner_main_grid">
 				<div class="w3_agile_logo">
-					<h1><a href="/"><span>G</span>erminate<i>Grow healthy products</i></a></h1>
+				<h1><a href="/"><span>F</span>eildSpark<i>Grow healthy products</i></a></h1>
 				</div>
 				<div class="agile_social_icons_banner">
 					<ul class="agileits_social_list">
@@ -157,67 +157,88 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!---728x90--->
 
 <!-- services -->
-	<div class="welcome">
+<div class="welcome">
 		<div class="container">
 			<h3 class="agileits_w3layouts_head">Our <span>Featured</span> Services</h3>
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">Discover comprehensive solutions tailored to your farming needs.</p>
 			<div class="w3_agile_services_grids"> 
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/13.png" alt=" " class="img-responsive" />
+							<img src="images/s1.png" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
-						<h4>Ut et turpis interdum</h4>
-						<p>Fusce eget nisi ac tellus dapibus eleifend in in erat. Vestibulum eu leo quis 
-							diam blandit rutrum et eu dui. Vivamus vitae euismod diam.</p>
+						<h4>Expert Consultation</h4>
+						<p>Gain valuable insights from our agricultural experts through one-on-one consultations. Whether you're facing a specific farming challenge or seeking general advice, our knowledgeable instructors are here to assist you. Book an appointment to discuss your unique needs and receive tailored recommendations to improve your farming practices.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/14.png" alt=" " class="img-responsive" />
+							<img src="images/s2.png" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
-						<h4>Vivamus vitae euismod</h4>
-						<p>Fusce eget nisi ac tellus dapibus eleifend in in erat. Vestibulum eu leo quis 
-							diam blandit rutrum et eu dui. Vivamus vitae euismod diam.</p>
+						<h4>Resource Center</h4>
+						<p>Access a wealth of information at your fingertips with our comprehensive resource center. Explore a variety of topics, including crop management techniques, livestock care best practices, and soil health improvement strategies. Our goal is to provide you with the knowledge and tools necessary to make informed decisions for your farm.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/15.png" alt=" " class="img-responsive" />
+							<img src="images/s3.png" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
-						<h4>blandit rutrum et erat</h4>
-						<p>Fusce eget nisi ac tellus dapibus eleifend in in erat. Vestibulum eu leo quis 
-							diam blandit rutrum et eu dui. Vivamus vitae euismod diam.</p>
+						<h4>Appointment Scheduling</h4>
+						<p>Easily book consultations with our experts using our convenient online appointment scheduling system. Choose from a variety of available time slots to find the perfect appointment that fits your schedule. You will receive confirmation and reminders, ensuring you never miss an important meeting.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/16.png" alt=" " class="img-responsive" />
+							<img src="images/s4.png" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
-						<h4>felis leo sodales lacus</h4>
-						<p>Fusce eget nisi ac tellus dapibus eleifend in in erat. Vestibulum eu leo quis 
-							diam blandit rutrum et eu dui. Vivamus vitae euismod diam.</p>
+						<h4>New Plants and Announcements</h4>
+						<p>Stay informed about the latest developments in the agricultural industry. Discover exciting new initiatives, upcoming events, and valuable resources to enhance your farming practices. We'll keep you updated on industry trends, best practices, and opportunities to grow your business. Join our community and be the first to know about new products, services, and promotions.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="clearfix"> </div>
+				
+				<div class="col-md-6 w3_agile_services_grid"> 
+					<div class="col-xs-4 w3_agile_services_grid_left"> 
+						<div class="agile_services_grid_left1 hvr-radial-out"> 
+							<img src="images/s5.png" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="col-xs-8 w3_agile_services_grid_right"> 
+						<h4>Q&A Section</h4>
+						<p>Have questions about farming? Our Q&A section is your go-to resource. Search for answers to common questions or submit your own to receive expert guidance. Our team is dedicated to providing informative and helpful responses to support your farming endeavors.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 w3_agile_services_grid"> 
+					<div class="col-xs-4 w3_agile_services_grid_left"> 
+						<div class="agile_services_grid_left1 hvr-radial-out"> 
+							<img src="images/s6.png" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="col-xs-8 w3_agile_services_grid_right"> 
+						<h4>Real-Time Agricultural Data</h4>
+						<p>Stay informed with our real-time data services. Access up-to-date market prices, weather forecasts, crop advisories, and other essential agricultural information. Make informed decisions based on the latest data and optimize your farming operations.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -231,48 +252,41 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/17.png" alt=" " class="img-responsive">
 			</div>
-			<p class="agile_para agileits_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para agileits_para">Your farming success is our priority.</p>
 			<div class="w3ls_news_grids">
 				<div class="col-md-4 w3_agileits_services_bottom_grid">
 					<div class="wthree_services_bottom_grid1">
 						<img src="images/5.jpg" alt=" " class="img-responsive" />
 						<div class="wthree_services_bottom_grid1_pos">
-							<h4>Fertilizing</h4>
+							<h4>24/7 Service</h4>
 						</div>
 					</div>
 					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
-						<div class="agileits_w3layouts_learn_more hvr-radial-out">
-							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-						</div>
+						<p>Your agricultural needs never sleep, and neither do we. Our dedicated team is available around the clock to assist you with any questions, concerns, or emergencies. We understand the critical nature of farming and are committed to providing uninterrupted support.</p>
+						
 					</div>
 				</div>
 				<div class="col-md-4 w3_agileits_services_bottom_grid">
 					<div class="wthree_services_bottom_grid1">
 						<img src="images/6.jpg" alt=" " class="img-responsive" />
 						<div class="wthree_services_bottom_grid1_pos">
-							<h4>Soil Testing</h4>
+							<h4>Quick Responses</h4>
 						</div>
 					</div>
 					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
-						<div class="agileits_w3layouts_learn_more hvr-radial-out">
-							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-						</div>
+						<p>Time is critical in agriculture. We understand that delays can impact your operations, so we prioritize prompt communication. Our team is dedicated to providing swift and efficient responses to your inquiries, ensuring you get the support you need when you need it. Expect quick turnaround times and effective solutions from our responsive team.</p>
 					</div>
 				</div>
 				<div class="col-md-4 w3_agileits_services_bottom_grid">
 					<div class="wthree_services_bottom_grid1">
 						<img src="images/3.jpg" alt=" " class="img-responsive" />
 						<div class="wthree_services_bottom_grid1_pos">
-							<h4>Planting</h4>
+							<h4>High-Quality Advice</h4>
 						</div>
 					</div>
 					<div class="agileinfo_services_bottom_grid2">
-						<p>Quisque faucibus scelerisque eros, molestie tristique lacus posuere in.</p>
-						<div class="agileits_w3layouts_learn_more hvr-radial-out">
-							<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-						</div>
+						<p>Benefit from the expertise of our seasoned agricultural professionals. Our team offers sound and practical advice tailored to your specific farming challenges. We combine in-depth knowledge with real-world experience to deliver solutions that drive your agricultural success.</p>
+						
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -385,18 +399,18 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
   </script>
 <!-- //flexSlider -->
 <!-- footer -->
-	<div class="footer">
-		<div class="container">
+<div class="footer">
+	    <div class="container">
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-						<h2><a href="index.html"><span>G</span>erminate<i>Grow healthy products</i></a></h2>
+					<h2><a href="/"><span>F</span>eildSpark<i>Grow healthy products</i></a></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Contact Info</h3>
-					<h4>Call Us <span>+1234 567 891</span></h4>
-					<p>My Company, 875 Jewel Road <span>8907 Ukraine.</span></p>
+					<h4>Call Us <span>+94 713300619</span></h4>
+					<p>Field Spark,No.78, Main Road, Kegalle. <span>71000 Sri Lanka.</span></p>
 					<ul class="agileits_social_list">
 						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -407,10 +421,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
 					<h3>Navigation</h3>
 					<ul class="w3layouts_footer_nav">
-						<li><a href="index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
-						<li><a href="icons.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Web Icons</a></li>
-						<li><a href="typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Typography</a></li>
-						<li><a href="contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
+						<li><a href="/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+						<li><a href="/aboutus"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>About Us</a></li>
+						<li><a href="/services"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Services</a></li>
+						<li><a href="/contactus"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 agileinfo_footer_grid">
@@ -434,10 +448,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		</div>
 		<div class="w3_agileits_footer_copy">
 			<div class="container">
-				<p> <a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-			</div> 
+				<p>Field Spark 2024</p>
+				<p>	&copy; Powered by 4GBx</p>
+			</div>
 		</div>
-	</div>
+</div>
 <!-- //footer -->
 <!-- menu -->
 	<script>
