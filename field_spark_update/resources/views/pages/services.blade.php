@@ -168,7 +168,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/s1.png" alt=" " class="img-responsive" />
+							<img src="images/s5.jpeg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
@@ -180,7 +180,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/s2.png" alt=" " class="img-responsive" />
+							<img src="images/s4.jpeg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
@@ -192,7 +192,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/s3.png" alt=" " class="img-responsive" />
+							<img src="images/s3.jpeg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
@@ -204,7 +204,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/s4.png" alt=" " class="img-responsive" />
+							<img src="images/plant.png" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
@@ -217,7 +217,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/s5.png" alt=" " class="img-responsive" />
+							<img src="images/s1.jpeg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
@@ -229,7 +229,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-6 w3_agile_services_grid"> 
 					<div class="col-xs-4 w3_agile_services_grid_left"> 
 						<div class="agile_services_grid_left1 hvr-radial-out"> 
-							<img src="images/s6.png" alt=" " class="img-responsive" />
+							<img src="images/s2.jpeg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-xs-8 w3_agile_services_grid_right"> 
@@ -297,11 +297,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!-- testimonials -->
 	<div class="testimonials">
 		<div class="container">
-			<h3 class="agileits_w3layouts_head">Our <span>Featured</span> Services</h3>
+			<h3 class="agileits_w3layouts_head">Our <span>Customer's</span>Feedbacks</h3>
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive">
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">We deliver expert agricultural solutions, blending innovation with sustainability to ensure your farm thrives.</p>
 			<div class="w3ls_news_grids">
 				<section class="slider">
 					<div class="flexslider">
@@ -312,7 +312,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 										<img src="images/15.jpg" alt=" " class="img-responsive" />
 									</div>
 									<div class="col-md-8 agile_testimonials_grid_right">
-										<h5>Vivamus malesuada <span>pellentesque</span> nunc id <i>'condim'</i></h5>
+										<h5>Positive Feedback <span>on </span>User <i>Interface</i></h5>
 										<div class="wthree_stars">
 											<ul>
 												<li><i class="fa fa-star"></i></li>
@@ -322,10 +322,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 												<li><i class="fa fa-star-o"></i></li>
 											</ul>
 										</div>
-										<p>Duis porttitor magna leo, ac feugiat nibh bibendum at. Duis porttitor 
-											placerat ex a fermentum. Praesent et dolor dignissim, fringilla enim vitae, 
-											tristique enim.</p>
-										<h6>:- Laura More <span>Customer</span></h6>
+										<p>Field Spark has revolutionized how we manage our farm activities. The user interface is clean, intuitive, and easy to navigate.</p>
+										<h6>:- Piyumi Kaveesha <span>Customer</span></h6>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -336,7 +334,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 										<img src="images/14.jpg" alt=" " class="img-responsive" />
 									</div>
 									<div class="col-md-8 agile_testimonials_grid_right">
-										<h5>Quisque eu aliquam <span>dignissim</span> ex a <i>'fringilla'</i></h5>
+										<h5>Feedback <span>on</span> Information <i>'Accessibility'</i></h5>
 										<div class="wthree_stars">
 											<ul>
 												<li><i class="fa fa-star"></i></li>
@@ -346,10 +344,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 												<li><i class="fa fa-star-o"></i></li>
 											</ul>
 										</div>
-										<p>Duis porttitor magna leo, ac feugiat nibh bibendum at. Duis porttitor 
-											placerat ex a fermentum. Praesent et dolor dignissim, fringilla enim vitae, 
-											tristique enim.</p>
-										<h6>:- Henry Paul <span>Customer</span></h6>
+										<p>The resources and plant information sections are incredibly detailed and accessible. We've been able to find precise information on crop management and pest control.</p>
+										<h6>:- Nisal Bandara <span>Customer</span></h6>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -360,7 +356,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 										<img src="images/16.jpg" alt=" " class="img-responsive" />
 									</div>
 									<div class="col-md-8 agile_testimonials_grid_right">
-										<h5>Vivamus malesuada <span>pellentesque</span> nunc id <i>'condim'</i></h5>
+										<h5>Praise <span>for</span> Community <i>' Features'</i></h5>
 										<div class="wthree_stars">
 											<ul>
 												<li><i class="fa fa-star"></i></li>
@@ -370,10 +366,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 												<li><i class="fa fa-star-o"></i></li>
 											</ul>
 										</div>
-										<p>Duis porttitor magna leo, ac feugiat nibh bibendum at. Duis porttitor 
-											placerat ex a fermentum. Praesent et dolor dignissim, fringilla enim vitae, 
-											tristique enim.</p>
-										<h6>:- Andria Carl <span>Customer</span></h6>
+										<p>The discussion forum on Field Spark is a fantastic place to connect with fellow farmers. Sharing experiences and getting advices.</p>
+										<h6>:- Saduni Himansa <span>Customer</span></h6>
 									</div>
 									<div class="clearfix"> </div>
 								</div>

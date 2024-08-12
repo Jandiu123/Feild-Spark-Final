@@ -783,6 +783,14 @@ figure.agileits_effect_moses:hover img {
 }
 /*-- //welcome-bottom --*/
 /*-- news --*/
+.w3ls_news_grid {
+    height: 600px; /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
 .w3ls_news_grids{
 	margin:3em 0 0;
 }

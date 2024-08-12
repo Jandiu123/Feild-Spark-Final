@@ -168,9 +168,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
         <div class="container">
             <h3 class="agileits_w3layouts_head">Latest <span>Resources</span> List</h3>
             <div class="w3_agile_image">
-                <img src="images/1.png" alt=" " class="img-responsive">
+                <img src="images/1.png" alt=" " class="img-responsive" >
             </div>
-            <p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+            <p class="agile_para">Discover your Knowledge with our diverse Resource collection. Perfect for every space, bringing life and tranquility to your home</p>
             <div class="w3ls_news_grids" id="newsContainer">
                 <!-- Resources will be dynamically added here -->
             </div>
@@ -342,15 +342,15 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
                 const resourceHTML = `
                     <div class="col-md-4 w3ls_news_grid ">
                         <div class="w3layouts_news_grid">
-                            <img src="${resource.image ? '/storage/' + resource.image : 'images/placeholder.jpg'}" alt=" " class="img-responsive" />
+                            <img src="${resource.image ? '/storage/' + resource.image : 'images/placeholder.jpg'}" alt=" " class="img-responsive image-grid"/>
                             <div class="w3layouts_news_grid_pos">
-                                <div class="wthree_text"><h3>Plantation</h3></div>
+                                <div class="wthree_text"><h3>${resource.title}</h3></div>
                             </div>
                         </div>
                         <div class="agileits_w3layouts_news_grid">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i>${new Date(resource.created_at).toLocaleDateString()}</li>
-                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Instructor</a></li>
                             </ul>
                             <h4><a href="#" data-toggle="modal" data-target="#myModal">${resource.title}</a></h4>
                             <p>${resource.description}</p>
@@ -373,7 +373,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
         fetchResources();
     });
 </script>
-
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b48ca7c7-c3fc-4bf5-acf7-c6bbc1bc1e37";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 
 </html>
