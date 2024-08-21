@@ -408,40 +408,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		</div>
 	</div>
 <!-- //newsletter -->
-<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="w3agile_footer_grids">
-				<div class="col-md-3 agileinfo_footer_grid">
-					<div class="agileits_w3layouts_footer_logo">
-					<a href="/"><img src="assest/logo34.png" alt="logo" class="logo-f"></a>
-					</div>
-				</div>
-				<div class="col-md-3 agileinfo_footer_grid">
-					<h3>Blog Posts</h3>
-					<div class="agileinfo_footer_grid_left">
-						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
-					</div>
-					<div class="agileinfo_footer_grid_left">
-						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
-					</div>
-					<div class="agileinfo_footer_grid_left">
-						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
-					</div>
-					<div class="agileinfo_footer_grid_left">
-						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="w3_agileits_footer_copy">
-			<div class="container">
-				<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-		</div>
-	</div>
-<!-- //footer -->
+
 <!-- stats -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.countup.js"></script>
