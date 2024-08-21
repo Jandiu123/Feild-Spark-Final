@@ -79,6 +79,22 @@
 </div>
 @endsection
 
+@section('start')
+<!-- Modal HTML -->
+<div id="smsModal" style="display:none;">
+    <div>
+        <h2>Enter Farmer's Phone Number</h2>
+        <form id="smsForm">
+            @csrf
+            <input type="hidden" name="meeting_link" id="meetingLink" value="">
+            <label for="farmer_phone_number">Farmer Phone Number:</label>
+            <input type="text" id="farmerPhoneNumber" name="farmer_phone_number" required>
+            <button type="submit">Send SMS</button>
+        </form>
+    </div>
+</div>
+@endsection
+
 @section('footer')
 <div class="container">
 			<div class="w3agile_footer_grids">

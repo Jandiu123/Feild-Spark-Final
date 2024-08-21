@@ -95,7 +95,7 @@
                             <td>${appointment.contact_number}</td>
                             <td>${appointment.date} at ${appointment.time}</td>
                             <td class="action-cell">
-                                <button class="start">Start</button>
+                                <button id="startButton">Start Meeting</button>
                                 <button class="transfer">Transfer</button>
                                 <button class="delete" data-id="${appointment.id}">Delete</button>
                             </td>
@@ -226,5 +226,24 @@
 });
     </script>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b48ca7c7-c3fc-4bf5-acf7-c6bbc1bc1e37";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <script>
+    document.getElementById('startButton').addEventListener('click', function() {
+        axios.post('/api/appointments/start-meeting', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+</script>
 </body>
 </html>
