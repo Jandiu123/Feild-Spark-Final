@@ -417,14 +417,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<a href="/"><img src="assest/logo34.png" alt="logo" class="logo-f"></a>
 					</div>
 				</div>
-				<div class="col-md-4 agileinfo_footer_grid">
-					<h3>Contact Info</h3>
-					
-				</div>
-				<div class="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
-					<h3>Navigation</h3>
-					
-				</div>
 				<div class="col-md-3 agileinfo_footer_grid">
 					<h3>Blog Posts</h3>
 					<div class="agileinfo_footer_grid_left">
