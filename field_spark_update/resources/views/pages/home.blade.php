@@ -115,7 +115,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					<h3 class="test">Ignite Your Farm's Potential</h3>
 					<p>FieldSpark is Sri Lanka's premier online platform connecting farmers with expert instructors. Discover valuable resources, seek expert advice, and grow your agricultural knowledge with our community-driven approach.</p>
 					<ul>
-						<li><a href="contact.html" class="w3l_contact">Contact Us</a></li>
+						<li><a href="/contactus" class="w3l_contact">Contact Us</a></li>
 						<li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">Read More</a></li>
 					</ul>
 				</div>

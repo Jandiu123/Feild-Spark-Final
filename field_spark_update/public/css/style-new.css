@@ -112,6 +112,12 @@ a.w3_agile_vimeo:hover{
     float: right;
     margin:1.6em 2em 0 0;
 }
+.image-grid {
+	width: 100%; /* Adjust this value as needed */
+	height: 270px; /* Set the desired height */
+	object-fit: cover; /* Ensures the image covers the box while maintaining aspect ratio */
+	border-radius: 5px; /* Optional: Rounds the corners */
+}
 /*-- menu-navigation --*/
 .shy-menu{
   -moz-transition: all .4s cubic-bezier(.1,.7,.3,1);
@@ -777,6 +783,14 @@ figure.agileits_effect_moses:hover img {
 }
 /*-- //welcome-bottom --*/
 /*-- news --*/
+.w3ls_news_grid {
+    height: 600px; /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
 .w3ls_news_grids{
 	margin:3em 0 0;
 }

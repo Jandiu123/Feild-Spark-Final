@@ -7,6 +7,7 @@ use App\Http\Controllers\InstructorAuthController;
 use App\Http\Controllers\PlantController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\ResourceController;
+use App\Http\Controllers\ZoomController;
 
 Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
@@ -17,8 +18,10 @@ Route::delete('/api/appointments/{id}', [AppointmentController::class, 'destroy'
 Route::post('/api/appointments/{id}/transfer', [AppointmentController::class, 'transfer']);
 
 
-
-
+Route::post('/api/appointments/{id}/start-meeting', [AppointmentController::class, 'createGoogleMeetAndNotify']);
+Route::get('/oauth2callback', [AppointmentController::class, 'handleGoogleCallback']);
+Route::get('/admin/appointment/{id}', [AppointmentController::class, 'showAdminAppointmentPage'])->name('admin.appointment.show');
+Route::post('/api/appointments/start-meeting', [AppointmentController::class, 'createGoogleMeetAndNotify']);
 
 Route::get('/instructor/register', function () {
     return view('instructor.register');

@@ -168,7 +168,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			<div class="w3_agile_image">
 				<img src="images/1.png" alt=" " class="img-responsive" />
 			</div>
-			<p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit sollicitudin.</p>
+			<p class="agile_para">Discover the beauty of nature with our diverse plant collection. Perfect for every space, bringing life and tranquility to your home</p>
 			
             <!---728x90--->
 
@@ -177,7 +177,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-4 w3layouts_gallery_grid" data-index="{{ $index }}" data-origin="{{ $plant->origin }}">
 					<a href="{{ $plant->image ? asset('storage/' . $plant->image) : 'assest/plantt.png' }}"  class="lsb-preview" data-lsb-group="header">
 						<div class="w3layouts_news_grid">
-                        <img src="{{ $plant->image ? asset('storage/' . $plant->image) : 'assest/plantt.png' }}" alt="{{ $plant->name }}" class="img-responsive">
+                        <img src="{{ $plant->image ? asset('storage/' . $plant->image) : 'assest/plantt.png' }}" alt="{{ $plant->name }}" class="img-responsive image-grid">
                         <div class="w3layouts_news_grid_pos">
 								<div class="wthree_text"><h3>{{ $plant->name }}</h3></div>
                                 <button class="learn-more" data-index="{{ $index }}">Read more</button>
@@ -208,18 +208,18 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		});
 	</script>
 <!-- footer -->
-	<div class="footer">
-		<div class="container">
+<div class="footer">
+	    <div class="container">
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-						<h2><a href="index.html"><span>G</span>erminate<i>Grow healthy products</i></a></h2>
+					<h2><a href="/"><span>F</span>eildSpark<i>Grow healthy products</i></a></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Contact Info</h3>
-					<h4>Call Us <span>+1234 567 891</span></h4>
-					<p>My Company, 875 Jewel Road <span>8907 Ukraine.</span></p>
+					<h4>Call Us <span>+94 713300619</span></h4>
+					<p>Field Spark,No.78, Main Road, Kegalle. <span>71000 Sri Lanka.</span></p>
 					<ul class="agileits_social_list">
 						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -230,10 +230,10 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
 					<h3>Navigation</h3>
 					<ul class="w3layouts_footer_nav">
-						<li><a href="index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
-						<li><a href="icons.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Web Icons</a></li>
-						<li><a href="typography.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Typography</a></li>
-						<li><a href="contact.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
+						<li><a href="/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+						<li><a href="/aboutus"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>About Us</a></li>
+						<li><a href="/services"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Services</a></li>
+						<li><a href="/contactus"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 agileinfo_footer_grid">
@@ -257,10 +257,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		</div>
 		<div class="w3_agileits_footer_copy">
 			<div class="container">
-				<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+				<p>Field Spark 2024</p>
+				<p>	&copy; Powered by 4GBx</p>
 			</div>
 		</div>
-	</div>
+</div>
 <!-- //footer -->
 <!-- menu -->
 	<script>
@@ -387,7 +388,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
     });
 </script>
 
-
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b48ca7c7-c3fc-4bf5-acf7-c6bbc1bc1e37";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 	
 </body>
