@@ -100,7 +100,7 @@
 			<div class="w3agile_footer_grids">
 				<div class="col-md-3 agileinfo_footer_grid">
 					<div class="agileits_w3layouts_footer_logo">
-					<h2><a href="/"><span>F</span>eildSpark<i>Grow healthy products</i></a></h2>
+					<h2><a href="{{ route('dashboard') }}"><span>F</span>eildSpark<i>Grow healthy products</i></a></h2>
 					</div>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
