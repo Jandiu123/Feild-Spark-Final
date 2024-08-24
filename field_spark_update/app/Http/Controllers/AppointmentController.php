@@ -1,16 +1,12 @@
 <?php
 
-// app/Http/Controllers/AppointmentController.php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Appointment;
 use App\Models\Instructor; // Import Instructor model if needed
-use Google_Client;
-use Google_Service_Calendar;
-use Twilio\Rest\Client;
+use App\Models\FinishedAppointment; // Assuming you have this model
 
 class AppointmentController extends Controller
 {
@@ -39,6 +35,34 @@ class AppointmentController extends Controller
         // Redirect with success message
         return redirect()->back()->with('success', 'Your appointment is successfully placed!');
     }
+
+    public function complete($id)
+{
+    try {
+        // Find the appointment by ID
+        $appointment = Appointment::findOrFail($id);
+
+        // Create a new FinishedAppointment record
+        FinishedAppointment::create([
+            'first_name' => $appointment->first_name,
+            'last_name' => $appointment->last_name,
+            'contact_number' => $appointment->contact_number,
+            'date' => $appointment->date,
+            'time' => $appointment->time,
+            'instructor_id' => $appointment->instructor_id,
+            // Add other fields as needed
+        ]);
+
+        // Delete the appointment from the appointments table
+        $appointment->delete();
+
+        return response()->json(['success' => true, 'message' => 'Appointment completed successfully.']);
+
+    } catch (\Exception $e) {
+        return response()->json(['success' => false, 'message' => 'Error completing appointment: ' . $e->getMessage()]);
+    }
+}
+
     
     public function getAppointments($instructorId)
 {

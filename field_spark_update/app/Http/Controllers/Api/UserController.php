@@ -66,43 +66,26 @@ class UserController extends Controller
      * @return User
      */
     public function loginUser(Request $request)
-    {
-        try {
-            $validateUser = Validator::make($request->all(), 
-            [
-                'email' => 'required|email',
-                'password' => 'required'
-            ]);
+{
+    try {
+        $validateUser = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
 
-            if($validateUser->fails()){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'validation error',
-                    'errors' => $validateUser->errors()
-                ], 401);
-            }
-
-            if(!Auth::attempt($request->only(['email', 'password']))){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'Email & Password does not match with our record.',
-                ], 401);
-            }
-
-            $user = User::where('email', $request->email)->first();
-
-            return redirect()->route('dashboard');
-            response()->json([
-                'status' => true,
-                'message' => 'User Logged In Successfully',
-                'token' => $user->createToken("API TOKEN")->plainTextToken
-            ], 200);
-
-        } catch (\Throwable $th) {
-            return response()->json([
-                'status' => false,
-                'message' => $th->getMessage()
-            ], 500);
+        if ($validateUser->fails()) {
+            return redirect()->back()->withErrors($validateUser->errors())->withInput();
         }
+
+        if (!Auth::attempt($request->only(['email', 'password']))) {
+            return redirect()->back()->withErrors(['message' => 'Email & Password do not match with our records.'])->withInput();
+        }
+
+        return redirect()->route('dashboard')->with('message', 'User Logged In Successfully');
+
+    } catch (\Throwable $th) {
+        return redirect()->back()->withErrors(['message' => $th->getMessage()])->withInput();
     }
+}
+
 }

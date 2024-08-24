@@ -15,4 +15,15 @@ class Question extends Model
     {
         return $this->hasMany(Reply::class);
     }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function likes()
+    {
+        return $this->hasMany(Like::class);
+    }
+
 }

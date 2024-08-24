@@ -34,5 +34,26 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'twilio' => [
+        'sid' => env('TWILIO_SID'),
+        'token' => env('TWILIO_TOKEN'),
+        'from' => env('TWILIO_FROM'),
+    ],
+    'notify' => [
+        'api_key' => env('NOTIFY_API_KEY'),
+        'api_secret' => env('NOTIFY_API_SECRET'),
+        'from' => env('NOTIFY_FROM'),
+    ],
+
+    'vonage' => [
+    'api_key' => env('VONAGE_API_KEY'),
+    'api_secret' => env('VONAGE_API_SECRET'),
+    'from' => env('VONAGE_FROM'), // Your Vonage number or sender ID
+    ],
+    
+    'textlocal' => [
+    'api_key' => env('TEXTLOCAL_API_KEY'),
+    'sender' => env('TEXTLOCAL_SENDER'),
+],
 
 ];

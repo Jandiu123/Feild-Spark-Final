@@ -62,6 +62,42 @@
         <!-- AJAX will populate this -->
     </tbody>
 </table>
+<!-- Success Modal HTML -->
+<div id="successModal" class="modalnew" style="display: none;">
+    <div class="modalnew-content">
+        <span class="closenew">&times;</span>
+        <h2>Success</h2>
+        <p>{{ session('success') }}</p>
+    </div>
+</div>
+
+<!-- Error Modal HTML (Optional) -->
+<div id="errorModal" class="modalnew" style="display: none;">
+    <div class="modalnew-content">
+        <span class="closenew">&times;</span>
+        <h2>Error</h2>
+        <p>{{ session('error') }}</p>
+    </div>
+</div>
+
+<!-- Existing Form Modal HTML -->
+<div id="smsModal" class="modalnew">
+    <div class="modalnew-content">
+        <span class="closenew">&times;</span>
+        <h2>Send SMS</h2>
+        <form id="smsForm" method="POST" action="{{ route('send.sms') }}">
+            @csrf
+            <label for="zoomLink">Zoom Link:</label>
+            <input type="url" id="zoomLink" name="zoomLink" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+            <button type="submit">Send SMS</button>
+        </form>
+    </div>
+</div>
+
 
 @endsection
 
@@ -80,19 +116,8 @@
 @endsection
 
 @section('start')
-<!-- Modal HTML -->
-<div id="smsModal" style="display:none;">
-    <div>
-        <h2>Enter Farmer's Phone Number</h2>
-        <form id="smsForm">
-            @csrf
-            <input type="hidden" name="meeting_link" id="meetingLink" value="">
-            <label for="farmer_phone_number">Farmer Phone Number:</label>
-            <input type="text" id="farmerPhoneNumber" name="farmer_phone_number" required>
-            <button type="submit">Send SMS</button>
-        </form>
-    </div>
-</div>
+
+
 @endsection
 
 @section('footer')
