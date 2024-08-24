@@ -7,7 +7,9 @@ use App\Http\Controllers\InstructorAuthController;
 use App\Http\Controllers\PlantController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\ResourceController;
-use App\Http\Controllers\ZoomController;
+use App\Http\Controllers\SMSController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\LikeController;
 
 Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
@@ -16,6 +18,10 @@ Route::get('/api/appointments', [AppointmentController::class, 'getInstructorApp
 Route::get('/api/instructors/{instructorId}/appointments', [AppointmentController::class, 'getAppointments']);
 Route::delete('/api/appointments/{id}', [AppointmentController::class, 'destroy']);
 Route::post('/api/appointments/{id}/transfer', [AppointmentController::class, 'transfer']);
+Route::post('/appointments/{id}/complete', [AppointmentController::class, 'complete'])->name('appointments.complete');
+
+
+Route::post('/send-sms', [SMSController::class, 'sendSMS'])->name('send.sms');
 
 
 Route::post('/api/appointments/{id}/start-meeting', [AppointmentController::class, 'createGoogleMeetAndNotify']);
@@ -158,6 +164,11 @@ Route::get('/api/plants', [PlantController::class, 'getPlants'])->name('plants.a
 Route::get('/api/resources', [ResourceController::class, 'getResources'])->name('resources.api');
 
 
+// Comments
+Route::post('/questions/{id}/comments', [CommentController::class, 'store'])->name('comments.store');
+
+// Likes
+Route::post('/questions/{id}/like', [LikeController::class, 'store'])->name('likes.store');
 
 
 

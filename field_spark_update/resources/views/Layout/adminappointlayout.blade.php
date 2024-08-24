@@ -72,6 +72,30 @@
     </script>
 
     <script>
+        // Handle Zoom button click
+        document.addEventListener('DOMContentLoaded', function() {
+            const appointmentsTableBody = document.querySelector('#appointmentsTable tbody');
+
+            appointmentsTableBody.addEventListener('click', function(event) {
+                if (event.target.classList.contains('zoom')) {
+                    const appointmentId = event.target.getAttribute('data-id');
+
+                    // Redirect to Zoom create meeting page
+                    redirectToZoomMeeting(appointmentId);
+                }
+            });
+
+            function redirectToZoomMeeting(appointmentId) {
+                // Optional: Use Zoom API to create a meeting programmatically
+                // Here, we'll just redirect the user to the Zoom website.
+
+                const zoomUrl = `https://zoom.us/start/videomeeting?confno=${appointmentId}`;
+                window.open(zoomUrl, '_blank'); // Open Zoom in a new tab
+            }
+        });
+    </script>
+
+    <script>
         // Fetch and display appointments
         document.addEventListener('DOMContentLoaded', function() {
             const instructorId = document.body.getAttribute('data-instructor-id');
@@ -90,9 +114,11 @@
                             <td>${appointment.contact_number}</td>
                             <td>${appointment.date} at ${appointment.time}</td>
                             <td class="action-cell">
-                                <button class="start-meeting">Start Meeting</button>
+                                <button id="startMeetingBtn" class="start-meeting">Send SMS</button>
                                 <button class="transfer">Transfer</button>
                                 <button class="delete" data-id="${appointment.id}">Delete</button>
+                                <button class="zoom" data-id="${appointment.id}">Get ZOOM</button>
+                                <button class="complete" data-id="${appointment.id}">Complete</button>
                             </td>
                         `;
                         appointmentsTableBody.appendChild(row);
@@ -101,6 +127,89 @@
                 .catch(error => console.error('Error fetching appointment data:', error));
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const appointmentsTableBody = document.querySelector('#appointmentsTable tbody');
+
+    appointmentsTableBody.addEventListener('click', function(event) {
+        if (event.target.classList.contains('complete')) {
+            const appointmentId = event.target.getAttribute('data-id');
+
+            if (confirm('Are you sure you want to complete this appointment?')) {
+                fetch(`/appointments/${appointmentId}/complete`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Remove the row from the table
+                        const row = event.target.closest('tr');
+                        row.remove();
+
+                        alert(data.message); // Display success message
+                    } else {
+                        alert(data.message); // Display error message if any
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        }
+    });
+});
+
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+
+        // Open modal when Start Meeting button is clicked
+        $(document).on('click', '.start-meeting', function() {
+            $('#smsModal').show();
+        });
+
+        // Close modal when the X is c// Show success modal if success message exists
+        @if(session('success'))
+            $('#successModal').show();
+        @endif
+
+        // Show error modal if error message exists
+        @if(session('error'))
+            $('#errorModal').show();
+        @endif
+
+        // Close modals when the X is clicked
+        $('.closenew').click(function() {
+            $('#successModal').hide();
+            $('#errorModal').hide();
+            $('#smsModal').hide();
+        });
+
+        // Close modals when clicking outside of the modal content
+        $(window).click(function(event) {
+            if ($(event.target).is('#successModal')) {
+                $('#successModal').hide();
+            }
+            if ($(event.target).is('#errorModal')) {
+                $('#errorModal').hide();
+            }
+        });licked
+        $('.closenew').click(function() {
+            $('#smsModal').hide();
+        });
+
+        // Close modal when clicking outside of the modal content
+        $(window).click(function(event) {
+            if ($(event.target).is('#smsModal')) {
+                $('#smsModal').hide();
+            }
+        });
+    });
+</script>
 
     <script>
         // Handle delete appointment

@@ -6,6 +6,10 @@ use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\InstructorAuthController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\SMSController;
+
+Route::post('/send-sms', [SMSController::class, 'sendSMS']);
+
 
 
 
