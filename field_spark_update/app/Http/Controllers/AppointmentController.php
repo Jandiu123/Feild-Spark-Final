@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 use App\Models\Appointment;
 use App\Models\Instructor; // Import Instructor model if needed
 use App\Models\FinishedAppointment; // Assuming you have this model
@@ -31,6 +32,24 @@ class AppointmentController extends Controller
             'date' => $request->date,
             'time' => $request->time,
         ]);
+
+        $instructorName = Instructor::find($request->instructor_id)->name;
+
+        $message = 'Your appointment is successfully placed with '. $instructorName . '!!!';
+        $response = Http::post('https://app.notify.lk/api/v1/send', [
+        'api_key' => env('NOTIFYLK_API_KEY'),
+        'contacts' => $request->contact_number,
+        'message' => $message,
+    ]);
+
+    // Check if the message was sent successfully
+    if ($response->successful()) {
+        // Redirect with success message
+        return redirect()->back()->with('success', 'Your appointment is successfully placed. Message sent to your mobile phone.');
+    } else {
+        // Handle error if message sending fails
+        return redirect()->back()->with('error', 'Failed to send message to your mobile phone.');
+    }
 
         // Redirect with success message
         return redirect()->back()->with('success', 'Your appointment is successfully placed!');

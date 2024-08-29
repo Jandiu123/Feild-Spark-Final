@@ -26,7 +26,7 @@ class UserController extends Controller
                 'email' => 'required|email|unique:users,email',
                 'address' => 'required',
                 'phone' => 'required',
-                'password' => 'required'
+                'password' => 'required|string|min:8|confirmed'
             ]);
 
             if($validateUser->fails()){
@@ -35,6 +35,10 @@ class UserController extends Controller
                     'message' => 'validation error',
                     'errors' => $validateUser->errors()
                 ], 401);
+            }
+
+            if ($request->password !== $request->password_confirmation) {
+                return redirect()->back()->withErrors(['message' => 'Passwords do not match'])->withInput();
             }
 
             $user = User::create([
