@@ -5,7 +5,7 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3.8",
         "filament/filament": "^3.2",
         "filament/widgets": "^3.2",
         "flowframe/laravel-trend": "^0.2.0",
